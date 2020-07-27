@@ -25,9 +25,9 @@
 
     <div class="container">
         <div class="main__inner">
-            <div class="main__content">
+            <div class="main__content content--news">
               
-                <h1><?=$article->title?></h1>
+                <h2 class="main__title"><?=$article->title?></h2>
                 <p><b>Author:</b> <mark><?=$article->author?></mark></p>
                 <? 
                     $date = date("d ", $article->date);  
@@ -42,13 +42,18 @@
                     <?=$article->text?>
                 </p>
 
-                <h3><br><br>Comments</h3>
+                <h4 class="main__title"><br><br>Comments</h4>
+                <? 
+                if($_COOKIE['login'] != ''):
+                ?>
                 <form method="post" action="/news.php?id=<?=$_GET['id']?>">
-                <label for="mess">Comment</label>
-                <textarea name="mess" id="mess" class="reg__form"></textarea>
-                <button type ="submit" id="mess_send" class="reg__button">Comment</button>
+                <label for="mess">Comment</label><br>
+                <textarea name="mess" id="mess" class="main__form"></textarea>
+                <button type ="submit" id="mess_send" class="main__button">Comment</button>
                 </form>
-
+                <? 
+                else:
+                ?>
                 <? 
                     if($_POST['mess'] != "") {
                         $mess = trim(filter_var($_POST['mess'], FILTER_SANITIZE_STRING));
@@ -64,11 +69,14 @@
                     $comments = $query->fetchAll(PDO::FETCH_OBJ);
 
                     foreach ($comments as $comment) {
-                        echo "<div class=''>
+                        echo "<div class='comments__block'>
                             <h4>$comment->author</h4>
                             <p>$comment->mess</p>
                         </div>";
                     }
+                ?>
+                <? 
+                endif;
                 ?>
             </div>
 

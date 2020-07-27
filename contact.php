@@ -18,25 +18,24 @@
     <div class="container">
         <div class="main__inner">
             <div class="main__content">
-
+                    <h2 class="main__title">Contact Us</h2>
                 <form method="post">
-                    <label for="username">Your Name</label>
-                    <input class="reg__form" type="text" name="username" id="username" placeholder="your name">
+                    <label for="username">Your Name</label><br>
+                    <input class="main__form" type="text" name="username" id="username" placeholder="your name">
                     <br> 
-                    <label for="email">Email</label>
-                    <input class="reg__form" type="text" name="email" id="email" placeholder="your email">
+                    <label for="email">Email</label><br>
+                    <input class="main__form" type="text" name="email" id="email" placeholder="your email">
                     <br>
-                    <label for="mess">Message</label>
-                    <textarea name="mess" id="mess" class="reg__form"></textarea>
+                    <label for="mess">Message</label><br>
+                    <textarea name="mess" id="mess" class="main__form" placeholder="email message"></textarea>
                     <br>   
-                    <div class="reg__alert" id="errorBlock"></div>
-                    <div class="reg__alert" id="authBlock"></div>      
+                    <div class="main__error" id="errorBlock"></div>
+                    <div class="main__alert" id="authBlock"></div>      
 
-                    <button class="reg__button" type="button" id="mess_send">Send message</button>
+                    <button class="main__button" type="button" id="mess_send">Send message</button>
                 </form>
 
             </div>
-
 
             <? include_once "blocks/aside.php"; ?>
         </div>

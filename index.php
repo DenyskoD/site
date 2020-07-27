@@ -24,11 +24,11 @@
                     $sql = "SELECT * FROM `articles` ORDER BY `date` DESC";
                     $query = $pdo->query($sql);
                     while($row = $query->fetch(PDO::FETCH_OBJ)) {
-                        echo "<h2>$row->title</h2><p>$row->intro</p>
+                        echo "<div class='article'><h2 class='main__title' >$row->title</h2><p>$row->intro</p>
                         <p><b>Author:</b><mark>$row->author</mark></p>
                         <a href='/news.php?id=$row->id' title='$row->title'>
                         <button class='reg__button'>To article</button>
-                        </a>";
+                        </a></div>";
                     }
                 ?>
 

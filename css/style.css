@@ -1,6 +1,6 @@
 body {
     margin : 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 15px;
     color:#fff;
     background-color: #000;
@@ -93,45 +93,85 @@ h1,h2,h3,h4,h5,h6,p {
 .main__inner {
     margin-top: 20px;
     display : grid;
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 250px;
 }
 .main__content {
     padding: 30px;
+    justify-self: center;
+}
+.main__title {
+    margin-bottom: 20px;
+    text-align: center;
 }
 .main__aside {
     padding: 30px;
 }
 
+/* MAIN FORM */
 
-
-
-/* registration */
-.reg__alert {
+.main__alert {
     display:none;
 }
-.reg__form {
+.main__form:last-child {
     outline: none;
     border-radius: 3px;
     border: 0;
-    padding: 7px 20px;
+    padding: 10px 30px;
     margin-bottom: 5px;
-
+    margin-top: 5px
 }
-.reg__button {
+.main__form:focus {
+    border-left: 4px solid #ffa31a;
+}
+.main__button {
     outline: none;
     border: 0;
     border-radius: 3px;
-    background-color: orange;
-    padding: 7px 20px;
+    background-color: #ffa31a;
+    padding: 10px 30px;
     color: #333;
     cursor: pointer;
-    margin-top: 10px;
+
     text-align: center;
     display : block;
     font-size: 15px;
+    margin: 20px auto 0;
+    transition: all 0.1s linear;
+    text-decoration: none;
 }
-.reg__button:hover {
-    opacity: 0.9;
+.main__button:hover {
+    transform: scale(1.05);
+    color: #fff;
+    border: 1px solid #fff;
+}
+.main__error {
+    color: red;
+    text-align: center;
+}
+.main__alert {
+    color: green;
+    text-align: center;
+}
+
+textarea.main__form {
+    resize: none;
+    height: 70px;
+}
+
+textarea.main__form::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* comments */
+
+.comments__block {
+    background-color: #333;
+}
+
+/* article */
+
+.article {
+    border: 1px solid #333;
 }
 
 

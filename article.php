@@ -25,25 +25,25 @@
     <div class="container">
         <div class="main__inner">
             <div class="main__content">
-
+                <h2 class="main__title">Adding article</h2>
                 <form method="post">
-                    <label for="title">Title</label>
-                    <input class="reg__form" type="text" name="title" id="title" >
+                    <label for="title">Title</label><br>
+                    <input class="main__form" type="text" name="title" id="title" placeholder="Article name">
                 
                     <br>   
 
-                    <label for="intro">Intro</label>
-                    <textarea class="reg__form" name="intro" id="intro"></textarea>
+                    <label for="intro">Intro</label><br>
+                    <textarea class="main__form" name="intro" id="intro" placeholder="Article intro"></textarea>
 
                     <br>
 
-                    <label for="text">Text</label>
-                    <textarea class="reg__form" name="text" id="text"></textarea>
+                    <label for="text">Text</label><br>
+                    <textarea class="main__form" name="text" id="text" placeholder="Article text"></textarea>
 
-                    <div class="reg__alert" id="errorBlock"></div>
-                    <div class="reg__alert" id="alertBlock"></div>      
+                    <div class="main__error" id="errorBlock"></div>
+                    <div class="main__alert" id="alertBlock"></div>      
 
-                    <button class="reg__button" type="button" id="add_article">Add</button>
+                    <button class="main__button" type="button" id="add_article">Add</button>
                 </form>
 
             </div>

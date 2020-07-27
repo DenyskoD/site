@@ -10,9 +10,13 @@
     <div class="page">
     <? include_once "blocks/header.php"; ?>
         <div class="container">
+            <div class="main__inner">
+                <div class="main__content">
 
-        <p>Error 404 <a href="/">На главную</a></p>
-
+                        <h2 class="main__title">Error 404</h2>
+                        <a class="main__button" href="/">Home Page</a>           
+                </div>   
+            </div>
         </div>
         
     <? include_once "blocks/footer.php"; ?>

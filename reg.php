@@ -18,24 +18,24 @@
     <div class="container">
         <div class="main__inner">
             <div class="main__content">
-
+                    <h2 class="main__title">Registration</h2>
                 <form method="post">
-                    <label for="username">Your Name</label>
-                    <input class="reg__form" type="text" name="username" id="username" placeholder="your name">
+                    <label for="username">Your Name</label><br>
+                    <input class="main__form" type="text" name="username" id="username" placeholder="your name">
                     <br>
-                    <label for="login">Login</label>
-                    <input class="reg__form" type="text" name="login" id="login" placeholder="your login">
+                    <label for="login">Login</label><br>
+                    <input class="main__form" type="text" name="login" id="login" placeholder="your login">
                     <br>
-                    <label for="email">Email</label>
-                    <input class="reg__form" type="text" name="email" id="email" placeholder="your email">
+                    <label for="email">Email</label><br>
+                    <input class="main__form" type="text" name="email" id="email" placeholder="your email">
                     <br>
-                    <label for="password">Password</label>
-                    <input class="reg__form" type="password" name="password" id="password" placeholder="your password">
+                    <label for="password">Password</label><br>
+                    <input class="main__form" type="password" name="password" id="password" placeholder="your password">
                     <br>   
-                    <div class="reg__alert" id="errorBlock"></div>
-                    <div class="reg__alert" id="authBlock"></div>      
+                    <div class="main__error" id="errorBlock"></div>
+                    <div class="main__alert" id="authBlock"></div>      
 
-                    <button class="reg__button" type="button" id="reg_user">Register</button>
+                    <button class="main__button" type="button" id="reg_user">Register</button>
                 </form>
 
             </div>
